@@ -1,0 +1,125 @@
+body {
+	background-color: #a9a9a9;
+	text-align: center;
+	/*#A9A9A9*/
+}
+
+a {
+	float: left;
+	border: 2px solid white;
+	background-color: purple;
+	font-size: 30px;
+	color: white;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 75;
+    height:150;
+    float: left;
+    vertical-align:middle;
+    /*background-color: blue;*/
+}
+
+li{
+    text-align: center;
+    
+}
+
+div{
+    /*display: inline;*/
+}
+
+#pokemonList{
+    background-color: yellow;
+}
+
+#blastoiseInfo{
+    display: none;
+    float: left;
+    width: 200;
+    margin: 50;
+    background-color: blue;
+    color: white;
+    text-align: center;
+	padding: 75px;
+}
+
+#charizardInfo{
+    display: none;
+    float: left;
+    width: 200;
+    margin: 50;
+    background-color: red;
+    color: white;
+    text-align: center;
+	padding: 75px;
+}
+
+#venasaurInfo{
+    display: none;
+    float: left;
+    width: 200;
+    background-color: green;
+    color: white;
+    text-align: center;
+    margin: 50;
+	padding: 75px;
+}
+
+#gengarInfo{
+    display: none;
+    float: left;
+    width: 200;
+    margin: 50;
+    background-color: purple;
+    color: white;
+    text-align: center;
+	padding: 75px;
+}
+
+#pikachuInfo{
+    display: none;
+    float: left;
+    width: 200;
+    margin:50;
+    background-color: yellow;
+    color: black;
+    text-align: center;
+	padding: 75px;
+}
+
+#roundInfo{
+    display: inline;
+    float: none;
+    text-align: center;
+    bottom: 0;
+}
+
+#roundAttack{
+    display: block;
+}
+#versus{
+    display: block;
+    float: none;
+    bottom: 0;
+}
+
+#roundInfo{
+	float: right;
+	padding-right: 150px;
+	margin:50px;
+	
+}
+
+button {
+	width: 200px;
+}
+
+#wrapper{
+    float: left;
+    width: 200;
+    display: block;
+}

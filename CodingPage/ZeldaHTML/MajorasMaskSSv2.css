@@ -1,0 +1,28 @@
+body {
+	background-color: sienna;
+}
+
+h1 {
+	color: gold;
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+}
+
+.nav{
+	border: 2px solid White;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align:center;
+	background-color: forestgreen;
+}
+
+.MaskContainer{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	align-items: center;
+}
+

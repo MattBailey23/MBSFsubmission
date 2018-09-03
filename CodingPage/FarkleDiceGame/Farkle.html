@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Farkle!</title>
+		<script src="./Farkle.js"></script>
+		<link rel="stylesheet" type="text/css" href="./Farkle.css">
+	</head>
+	<body onLoad="load()">
+	<a href="../CodingPractice.html">Home</a>
+	<div class="main">
+	    <div id="diceRolling">
+	        <button class="dice" id="diceOne" onClick="selectDice(this)">1</button>
+	        <button class="dice" id="diceTwo" onClick="selectDice(this)">2</button>
+	        <button class="dice" id="diceThree" onClick="selectDice(this)">3</button>
+	        <button class="dice" id="diceFour" onClick="selectDice(this)">4</button>
+	        <button class="dice" id="diceFive" onClick="selectDice(this)">5</button>
+	        <button class="dice" id="diceSix" onClick="selectDice(this)">6</button>
+	    </div>
+	    
+	    
+	    <!--<button class="fark" id="farkled" onClick="openFarkle()">Open Farkle Window</button>
+	    <button class="stra" id="straight" onClick="openStraight()">Open Straight</button>
+	    <button class="trip" id="tripDoub" onClick="openTripleDouble()">Open TripleDouble</button>-->
+	    <h4 id="pointsLabel"></h4>
+	    <h4 id="totalPointsLabel"></h4>
+	    
+	    <div id="farkleBox" class="popup">
+	        <div class="farkleContent">
+	            <button class="closeBtn" id="closeFarkle" onClick="closeFarkle()">X</button>
+	            <h3>Farkle! Turn Over</h3>
+	        </div>
+	    </div>
+	    
+	    <div id="straightBox" class="popup">
+	        <div class="straightContent">
+	            <button class="closeBtn" id="closeStraight" onClick="closeStraight()">X</button>
+	            <h3>Straight! 1,2,3,4,5,6 = 1500pts!</h3>
+	        </div>
+	    </div>
+		
+		<div id="tripleDoubleBox" class="popup">
+	        <div class="tripleDoubleContent">
+	            <button class="closeBtn" id="closeTripleDouble" onClick="closeTripleDouble()">X</button>
+	            <h3>Triple Doubles (three pairs) = 1500pts!</h3>
+	        </div>
+	    </div>
+	    
+	    <div id="pointsErrorBox" class="popup">
+	        <div class="pointsErrorContent">
+	            <button class="closeBtn" id="closePointsError" onClick="closePointsError()">X</button>
+	            <h3>You must have 1000 points to get on the board. Keep Rolling! Good Luck!</h3>
+	        </div>
+	    </div>
+	    
+	    <div id="diceHold">
+	        
+	    </div>
+	    
+	    <button class="roll" id="rollDice" onClick="rollingDice(); checkForFarkle(); checkForStraight(); checkTripleDoubles();">Roll Dice</button>
+	    <button class="stay" id="stayBtn" onClick="stay();">Stay</button>
+	</div>
+	</body>
+</html>

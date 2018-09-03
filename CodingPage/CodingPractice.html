@@ -1,0 +1,60 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="CodingPractice.js"></script>
+	<link rel="stylesheet" type="text/css" href="./CodingPractice.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+</head>
+<body>
+	<div id="sideNav" class="projectsNav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="#">Home</a>
+		<button class="dropdownBtn">API Practice 
+			<i id="apiMenuCaret" class="fa fa-caret-down" onClick="apiVisibility()"></i>
+		</button>
+			<div id="apiMenu" class="dropdown">
+				<a href="./WeatherData/getWeatherData.html">Weather Data</a>
+			</div>
+		<button class="dropdownBtn">Games
+			<i id="gamesMenuCaret" class = "fa fa-caret-down" onClick="gamesVisibility()"></i>
+		</button>
+			<div id="gameMenu" class="dropdown">
+				<a href="./FarkleDiceGame/Farkle.html">Farkle Dice Game</a>
+				<a href="./WarCardGame/War.html">War Card Game</a>
+				<a href="./PokemonBattle/PokemonBattle.html">Pokemon Battle Simulator</a>
+			</div>
+		<a href="./ZeldaHTML/LegendofZelda-ItemTracker.html">Zelda Project</a>
+	</div>
+	
+	<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Projects</span>
+	
+	<div class="main">
+		<h2>MB Coding Projects</h2>
+		<p>A combination of a few coding projects I have worked on can be found in the Projects Menu</p>
+		<h3>API Projects</h3>
+		<p>The API section in the project nav currently only has my weather data project. It is a simple call an
+			api and handle the JSON data returned. It currently takes the user entered city and puts the data needed
+			into a table dynamically.</p>
+		</p>I also have a social media project I am working on where you can log in with facebook, twitter, or instagram
+			and post to those sites from one place. However since I am only working on a local host it will not work from
+			other computers so it has been removed from the site.</p>
+		<h3>Games</h3>
+		<p>Farkle is a dice game to where you roll dice to attempt to get 10,000 Points exactly. The current status of this
+			project isn't quite visually appealing, but there is a lot of logic to put into so my focus has been on that currently.
+			for the most part all of the logic is there I just need to add a few more things to work out rarer use cases.</p>
+		<p>War is the card game everyone knows how to play. Again this isn't very visually appealing at the moment and I would
+			like to add some better effects to the card handling but the logic is all there on this one. Just need to add some CSS work</p>
+		<p>The Pokemon Battle Simulater is one I created a while ago to begin brushing up on my coding. You select the 2 Pokemon
+			you would like to battle and it shows which moves the Pokemon know. I used a Random Number simulator to randomize
+			which attacks the pokemon will use each round. Every move has a different damage amount and the number of rounds varies
+			depending on how much damage all the attacks do combined compared to the opponents health. Looking at in now there
+			is a lot more I would like to do to this one logic wise and visually.</p>
+		<h3>The Zelda Project</h3>
+		<p>I am a big Zelda fan and there is several games that have been made over the years and I thought it would be a good
+			idea to create a site where you can track your progress throughout all of the games. I like to complete ever side mission
+			and collect every item there is. Instead of going through one game in different sites I want to combine them all together
+			to create a one stop shop. There is a lot of work still to do on this but what is there gives the general idea. I would
+			also like to add a Merchandise section to track all the zelda collectables out there.</p>
+	</div>
+</body>

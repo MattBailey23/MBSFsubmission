@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>War!</title>
+	<script src="./War.js"></script>
+	<link rel="stylesheet" type="text/css" href="./War.css">
+</head>
+<body onLoad="load()">
+	<a href="../CodingPractice.html">Home</a>
+	
+    <div class='modal' id='infoBox'>
+        <div class='modal-content'>
+            <p>Hello! decided to make the war card game for you guys to play but it is still a work in progress so here is what to expect right now. War is a long game, but as of right now I do not have logic for when either you or the computer has 0 cards left so technically you can't win right now sorry! Also if there is a tie in card value, the logic right now is you will get one more card that won't be able to tie again. if you win the tie  you will also only get 2 cards insted of 4 I haven't added logic for the "hidden" cards yet. Other than that try it out and I'm welcome to feedback. Enjoy!</p>
+            <button id='play' onClick="play()">Let's Play!</button>
+            <p>P.S. sorry that it isn't very visually appealing</p>
+        </div>
+    </div>
+
+	<div class="main">	
+		<div class='players' id='playerContent'>
+		    <button id='person'>Your Deck</button>
+		    <button id='playerHidden1' class='hiddenCard'>Hidden Card 1</button>
+		    <button id='playerHidden2' class='hiddenCard'>Hidden Card 2</button>
+		    <button id='playerSD'></button>
+		    <p id="playerLabel">Player 1</p>
+		    <p id="playerScore">Card Count: 26</p>
+		</div>
+		
+		<div class='players' id='computerContent'>
+		    <button id='computer'>Computer's Deck</button>
+		    <button id='computerHidden1' class='hiddenCard'>Hidden Card 1</button>
+		    <button id='computerHidden2' class='hiddenCard'>Hidden Card 2</button>
+		    <button id='computerSD'></button>
+		    <p id="computerLabel">Computer</p>
+		    <p id="computerScore">Card Count: 26</p>
+		</div>
+		
+		<button id='deal' onClick="fight()">Deal!</button>
+		<button id='showCards' onClick="showHiddenCards()">Show Cards</button>
+		
+		
+		<p id='test'></p>
+		
+		
+		    
+	</div>
+</body>
+</html>

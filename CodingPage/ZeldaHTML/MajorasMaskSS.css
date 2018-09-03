@@ -1,0 +1,160 @@
+body {
+	background-color: sienna;
+}
+
+h1 {
+	color: gold;
+	text-align: center;
+}
+
+ul{
+	border: 2px solid White;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align:center;
+	background-color: forestgreen;
+}
+
+li {
+	display:inline;
+	border: 2px solid white;
+	padding: 8px 8px;
+}
+
+a{
+	display:inline-block;
+	padding:10px;
+}
+
+li a{
+	color: white;
+}
+
+
+li a:hover{
+	background-color: gold;
+}
+
+li a:active{
+	background-color: gold;
+	color: white;
+}
+
+button{
+	cursor:pointer;
+	border: white;
+	/*width:100px;
+	height:100px;*/
+}
+
+.underConstruction{
+	opacity: 0.5;
+	text-decoration: none;
+	background-color: gray;
+	cursor: not-allowed;
+}
+
+.obtainable {
+	height:100px;
+	width:93px;
+	opacity:0.3;
+	filter:alpha(opacity=30);
+}
+.nav{
+	border: 2px solid White;
+	list-style: none;
+	margin: 0 auto;
+	text-align:center;
+	background-color: forestgreen;
+}
+
+.navList{
+	display:inline;
+	border: 2px solid white;
+	padding: 8px 8px;
+	text-align: center;
+}
+
+a{
+	display:inline-block;
+	padding:10px;
+	text-align: center;
+}
+
+li a{
+	color: white;
+	text-align: center;
+}
+
+input{
+	margin: 100px;
+}
+
+.MaskContainer {
+	
+	margin: 0 auto;
+	text-align: center;
+}
+
+.current{
+	background-color: blue;
+}
+
+table, th, td {
+	border: 3px dotted gold;
+	background-color: forestgreen;
+	color: white;
+}
+
+table {
+	width: 100;
+	text-align: center;
+}
+
+.heart {
+	width: 25%;
+	height: 35%;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+	
+}
+
+.heartStyle
+{
+    opacity: 1.0;
+	
+}
+
+
+/*.collapsibleList li{
+  list-style-image : url('button.png');
+  cursor           : auto;
+}
+
+li.collapsibleListOpen{
+  list-style-image : url('button-open.png');
+  cursor           : pointer;
+}
+
+li.collapsibleListClosed{
+  list-style-image : url('button-closed.png');
+  cursor           : pointer;
+}
+
+.row { vertical-align: top; height: auto !important; }
+list { display: none; }
+.show { display: none; }
+.hide:target + .show { display: inline-block; }
+.hide:target { display: none; }
+.hide:target ~ .list { display:inline-block; }
+@media print { .hide, .show { display: none; } }
+
+/*.Button{
+    margin: 10px;
+}
+
+#nav ul>li:hover>ul {
+display: block;
+}*/
